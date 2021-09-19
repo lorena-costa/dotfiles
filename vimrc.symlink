@@ -4,15 +4,40 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
- Plugin 'VundleVim/Vundle.vim'
- Plugin 'preservim/nerdtree'
- Plugin 'christoomey/vim-tmux-navigator'
+        Plugin 'VundleVim/Vundle.vim'
+        Plugin 'preservim/nerdtree'
+        Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()
 
+let mapleader=","
 filetype plugin indent on
 syntax enable
-set number relativenumber
+set number
+set relativenumber
+set cursorline 
+set wildmenu 
+set lazyredraw 
+set showmatch 
+set hlsearch 
 
 " NerdTree keybindings
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+set tabstop=4 
+set softtabstop=4 
+set expandtab
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" " $/^ doesn't do anything
+nnoremap $ <nop>
+nnoremap ^ <nop>
+
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
