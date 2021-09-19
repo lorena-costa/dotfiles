@@ -1,4 +1,4 @@
-eyntax on
+syntax on
 set number
 set nocompatible
 filetype off
