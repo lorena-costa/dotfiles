@@ -27,6 +27,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 set tabstop=4 
 set softtabstop=4 
 set expandtab
+set autoindent
 
 " move to beginning/end of line
 nnoremap B ^
