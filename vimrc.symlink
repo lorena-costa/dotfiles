@@ -1,20 +1,18 @@
-syntax enable
-set number
-set relativenumber
+" Vundle configuration [Plugin Manager]
 set nocompatible
 filetype off
 
-" Vundle configuration [Plugin Manager]
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
  Plugin 'VundleVim/Vundle.vim'
  Plugin 'preservim/nerdtree'
  Plugin 'christoomey/vim-tmux-navigator'
-call vundle#end()            " required
+call vundle#end()
+
 filetype plugin indent on
+syntax enable
+set number relativenumber
 
 " NerdTree keybindings
-nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
