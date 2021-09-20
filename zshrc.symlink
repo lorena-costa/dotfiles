@@ -1,4 +1,5 @@
 PROMPT='%F{006}%~%f $ '
+export TERM=tmux-256color
 
 # terminal command navigation
 bindkey "^[[1;5C" forward-word                      # [Ctrl-right] - forward one word
@@ -23,3 +24,6 @@ alias ta='tmux attach'
 alias tls='tmux ls'
 alias tat='tmux attach -t'
 alias tns='tmux new-session -s'
+
+# todo: remove from this file put in profile
+export PATH=$PATH:~/.platformio/penv/bin

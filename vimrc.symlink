@@ -12,6 +12,7 @@ call vundle#end()
 let mapleader=","
 filetype plugin indent on
 syntax enable
+colorscheme molokai 
 set number
 set relativenumber
 set cursorline 
@@ -23,6 +24,7 @@ set hlsearch
 " NerdTree keybindings
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+let NERDTreeMinimalUI=1
 
 set tabstop=4 
 set softtabstop=4 
