@@ -17,6 +17,8 @@ zstyle ':vcs_info:*' unstagedstr '*'
 zstyle ':vcs_info:git:*' formats " %{$fg[yellow]%}[%b]%u" 
 
 # format our main prompt for hostname and current folder
-PROMPT="%B%n %{$fg[blue]%}%~"
+PROMPT="@%n %{$fg[blue]%}%1~"
+
+# git branch name and unstaged checkmark
 PROMPT+="\$vcs_info_msg_0_"
 PROMPT+="%{$reset_color%} $ "
