@@ -2,11 +2,20 @@
 
 ## autoload vcs and colors
 autoload -U colors && colors
-parse_git_branch() {
-        git symbolic-ref --short HEAD 2> /dev/null
-}
+autoload -Uz vcs_info
+
+# enable only git 
+zstyle ':vcs_info:*' enable git
+
+# setup a hook that runs before every ptompt. 
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
+
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr '*'
+zstyle ':vcs_info:git:*' formats " %{$fg[yellow]%}git:[%b]%u%{$reset_color%} $ " 
 
 # format our main prompt for hostname and current folder
 PROMPT="%B%n %{$fg[blue]%}%~"
-PROMPT+=" %{$fg[yellow]%}git:[$(parse_git_branch)]%{$reset_color%} $ "
+PROMPT+="\$vcs_info_msg_0_ "
