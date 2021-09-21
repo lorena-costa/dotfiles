@@ -13,10 +13,10 @@ alias free='free -m' # show sizes in MB
 
 case "$(uname -s)" in
 Darwin)
-    colorflag="--color=auto"
+	colorflag="-G"
 	;;
 Linux)
-	colorflag="-G"
+    colorflag="--color=auto"
     ;;
 esac
 
