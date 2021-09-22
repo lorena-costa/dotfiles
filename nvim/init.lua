@@ -2,7 +2,6 @@ local opt = vim.opt
 
 -- Appearance 
 vim.o.termguicolors = true
-vim.cmd [[silent! colorscheme inkpot]]
 opt.number = true -- show line numbers
 opt.relativenumber = true -- show number relative to cursor: maybe create a toogle function
 opt.cursorline = true -- highlight current line
