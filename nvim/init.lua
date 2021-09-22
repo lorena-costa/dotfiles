@@ -1,3 +1,6 @@
+require('plugins')
+require('bindings')
+
 local opt = vim.opt
 
 -- Appearance 
