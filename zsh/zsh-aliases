@@ -1,6 +1,7 @@
 #!/bin/sh
 
-alias vi="nvim"
+alias vi="$HOME/.local/bin/nvim.appimage"
+alias nvim="vi"
 
 # confirm before overwriting something
 alias cp="cp -i"
