@@ -1,8 +1,5 @@
 #!/bin/sh
 
-alias vi="$HOME/.local/bin/nvim.appimage"
-alias nvim="vi"
-
 # easier to read disk
 alias df='df -h'     # human-readable sizes
 alias free='free -m' # show sizes in MB
