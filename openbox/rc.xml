@@ -286,11 +286,15 @@
         <direction>down</direction>
       </action>
     </keybind>
-      <keybind key="W-Escape">
+	<keybind key="W-Escape">
         <action name="ShowMenu">
           <menu>root-menu</menu>
-        </action>
-      </keybind>
+			<position>
+				<x>0</x>
+				<y>25</y>
+			</position>
+		</action>
+		</keybind>
     <keybind key="A-space">
       <action name="Execute">
         <command>rofi -show run</command>
@@ -778,6 +782,6 @@
   </application>
 
   # end of the example
--->
+	-->
   </applications>
 </openbox_config>
