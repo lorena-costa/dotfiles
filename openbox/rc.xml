@@ -191,18 +191,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
-      <action name="GoToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="S-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
@@ -212,18 +200,6 @@
     <keybind key="S-A-Right">
       <action name="SendToDesktop">
         <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Up">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Down">
-      <action name="SendToDesktop">
-        <to>down</to>
         <wrap>no</wrap>
       </action>
     </keybind>
@@ -310,6 +286,11 @@
         <direction>down</direction>
       </action>
     </keybind>
+      <keybind key="W-Escape">
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
+        </action>
+      </keybind>
     <keybind key="A-space">
       <action name="Execute">
         <command>rofi -show run</command>
@@ -461,13 +442,6 @@
         <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
-      </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
       </mousebind>
     </context>
     <context name="Top">
@@ -661,11 +635,6 @@
           <menu>client-list-combined-menu</menu>
         </action>
       </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="ShowMenu">
-          <menu>root-menu</menu>
-        </action>
-      </mousebind>
     </context>
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
@@ -710,7 +679,7 @@
        entry in parent menu
        if this is a negative value, then the delay is infinite and the
        submenu will not be hidden until a different submenu is opened -->
-    <showIcons>no</showIcons>
+    <showIcons>yes</showIcons>
     <!-- controls if icons appear in the client-list-(combined-)menu -->
     <manageDesktops>yes</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
