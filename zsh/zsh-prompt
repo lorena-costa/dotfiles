@@ -14,7 +14,7 @@ setopt prompt_subst
 
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr '*'
-zstyle ':vcs_info:git:*' formats " %{$fg[yellow]%}[%b]%u" 
+zstyle ':vcs_info:git:*' formats " %{%F{11}%}[%b]%u%f" 
 
 # format our main prompt for hostname and current folder
 PROMPT="@%n %{$fg[blue]%}%1~"
