@@ -1,6 +1,6 @@
-xrandr --output HDMI1 --mode 1920x1080 --primary --right-of eDP1 --output eDP1 --mode 1366x768
+xrandr --output HDMI1 --pos 1366x0 --mode 1920x1080 --primary --output eDP1 --pos 0x0 --mode 1366x768
 feh --bg-scale ~/.config/openbox/background.jpg
-picom &
 setxkbmap -model abnt2 -layout br -variant abnt2
+picom &
 tint2 &
-plank &
+XDG_SESSION_TYPE=x11 plank &

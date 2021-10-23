@@ -339,7 +339,29 @@
       <action name="Execute">
         <command>gnome-screenshot -i</command>
       </action>
-    </keybind>
+  </keybind>
+	<keybind key="W-Left">
+		<action name="UnmaximizeFull"/>
+		<action name="MaximizeVert"/>
+		<action name="MoveResizeTo">
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</keybind>
+	<keybind key="W-Right">
+		<action name="UnmaximizeFull"/>
+		<action name="MaximizeVert"/>
+		<action name="MoveResizeTo">
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>east</direction></action>
+	</keybind>
+	<keybind key="W-Down">
+		<action name="Unmaximize"/>
+	</keybind>
+	<keybind key="W-Up">
+		<action name="Maximize"/>
+	</keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
