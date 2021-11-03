@@ -60,9 +60,9 @@ output * bg ~/.themes/wallpaper.jpg fill
 #
 # Example configuration:
 #
-  input * {
+ input * {
    xkb_layout "br"
-   }
+ }
 # exec "setxkbmap -model abnt2 -layout br -variant abnt2"
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -206,21 +206,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #
-# Status Bar:
+# Status Bar: Using waybar
 #
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+exec waybar
 
 include /etc/sway/config.d/*
