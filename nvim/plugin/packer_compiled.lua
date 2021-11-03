@@ -71,33 +71,40 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/LuaSnip"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["nvim-cmp"] = {
     config = { "\27LJ\1\2C\0\1\3\0\4\0\a4\1\0\0%\2\1\0>\1\2\0027\1\2\0017\2\3\0>\1\2\1G\0\1\0\tbody\15lsp_expand\fluasnip\frequireƒ\1\1\0\4\0\n\0\0154\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\6\0003\2\4\0001\3\3\0:\3\5\2:\2\a\0012\2\3\0003\3\b\0;\3\1\2:\2\t\1>\0\2\1G\0\1\0\fsources\1\0\1\tname\fluasnip\fsnippet\1\0\0\vexpand\1\0\0\0\nsetup\bcmp\frequire\0" },
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/lorena/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   }
 }
 

@@ -27,12 +27,12 @@ gaps outer 0
 ### GTK Theme
 set $gnome-schema org.gnome.desktop.interface
 
-exec_always {
-    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
-    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
-    gsettings set $gnome-schema cursor-theme 'whitesur-cursor'
-    gsettings set $gnome-schema font-name 'MesloLGM Nerd Font 9'
-}
+#exec_always {
+#    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+#    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+#    gsettings set $gnome-schema cursor-theme 'whitesur-cursor'
+#    gsettings set $gnome-schema font-name 'MesloLGM Nerd Font 9'
+#}
 
 ### Output configuration
 #
@@ -205,7 +205,16 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# System controls:
 #
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+
 # Status Bar: Using waybar
 #
 exec waybar
