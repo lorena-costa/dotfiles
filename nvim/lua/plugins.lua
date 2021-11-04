@@ -30,4 +30,8 @@ return require('packer').startup(function()
 	end
 	}
 	use { 'saadparwaiz1/cmp_luasnip' }
+	use {
+		'norcalli/nvim-colorizer.lua',
+		 config = function() require'colorizer'.setup {} end
+	}
 end)
