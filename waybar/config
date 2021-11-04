@@ -4,21 +4,11 @@
     "modules-center": ["sway/window"],
     "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock"],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "sway/workspaces": {
+         "format-icons": {
+             "urgent": "",
+         }
+     },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -38,7 +28,7 @@
     },
     "backlight": {
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""],
+        "format-icons": ["", ""],
     },
     "battery": {
         "states": {
@@ -49,7 +39,7 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
     "network": {
         "format-wifi": "{signalStrength}%  ",
@@ -59,8 +49,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}   {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",

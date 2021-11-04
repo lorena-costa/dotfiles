@@ -27,19 +27,12 @@ gaps outer 0
 ### GTK Theme
 set $gnome-schema org.gnome.desktop.interface
 
-#exec_always {
-#    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
-#    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
-#    gsettings set $gnome-schema cursor-theme 'whitesur-cursor'
-#    gsettings set $gnome-schema font-name 'MesloLGM Nerd Font 9'
-#}
-
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg ~/.themes/wallpaper.jpg fill
-#
-# Example configuration:
+
+# Displays
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
