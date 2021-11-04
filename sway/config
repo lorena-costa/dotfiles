@@ -32,7 +32,7 @@ output * bg ~/.themes/wallpaper.jpg fill
 # Displays
 #
 output eDP-1 position 0,0
-output HDMI-A-1 resolution 2560x1440 scale 1.2 position 1366,0
+output HDMI-A-1 resolution 2560x1440 scale 1.3 position 1366,0
 #output HDMI-A-1 scale 2 position 1366,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
